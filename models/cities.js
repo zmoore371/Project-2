@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class city extends Model {}
+class City extends Model { }
 
-city.init(
+City.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -11,13 +11,13 @@ city.init(
             primaryKey: true,
             autoIncrement: true,
         },
-            City_Name:{
-                type: DataTypes.string,
-                allowNull: false,
+        city_name: {
+            type: DataTypes.STRING,
+            allowNull: false,
         },
-            State_id: {
-                type: DataTypes.string,
-                allowNull: false, 
+        state_id: {
+            type: DataTypes.STRING,
+            allowNull: false,
         },
     },
     {
@@ -25,7 +25,7 @@ city.init(
         freezeTableName: true,
         underscored: true,
         modelName: 'city',
-        }
-    );
+    }
+);
 
-module.exports = city;
+module.exports = City;
