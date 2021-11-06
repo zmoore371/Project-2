@@ -1,10 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-//this is my Class object
-class City extends Model {}//similar to a constructor in C#
+class City extends Model { }
 
-//initializing the City class
 City.init(
     {
         //properties/fields defining the class - table schema
@@ -14,13 +12,13 @@ City.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        City_Name: {
+        city_name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        State_id: {
+        state_id: {
             type: DataTypes.STRING,
-            allowNull: false, 
+            allowNull: false,
         },
     },
     {
@@ -29,7 +27,7 @@ City.init(
         freezeTableName: true,
         underscored: true,
         modelName: 'city',
-        }
-    );
+    }
+);
 
 module.exports = City;
