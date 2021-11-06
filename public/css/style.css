@@ -1,0 +1,105 @@
+/* --------------------*/
+/* Custom Properties   */
+/* --------------------*/
+
+:root {
+  --darkest: #040303ff;
+  --slate-gray: #3a4e48ff;
+  --cool: #6a7b76ff;
+  --warm: #8b9d83ff;
+  --neutral: #beb0a7ff;
+}
+
+/* --------------------*/
+/* Reset               */
+/* --------------------*/
+
+/* https://piccalil.li/blog/a-modern-css-rest/ */
+
+/* Box Sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+picture,
+figure {
+  margin: 0;
+}
+
+/* Set up the body */
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
+
+/*make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --------------------*/
+/* Utility classes     */
+/* --------------------*/
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  padding-inline: 2em; /*looking at inline access of container (left and right side, not top and bottom)*/
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
