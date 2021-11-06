@@ -1,22 +1,22 @@
 [
     {
-        "City_Name:": "Sanford",
-        "State_id:": "NC"
+        "city_name": "Sanford",
+        "state_id": "NC"
     },
     {
-        "City_Name:": "Sanford",
-        "State_id:": "FL"
+        "city_name": "Sanford",
+        "state_id": "FL"
     },
     {
-        "City_Name:": "Raleigh",
-        "State_id:": "NC"
+        "city_name": "Raleigh",
+        "state_id": "NC"
     },
     {
-        "City_Name:": "Cary",
-        "State_id:": "NC"
+        "city_name": "Cary",
+        "state_id": "NC"
     },
     {
-        "City_Name:": "Apex",
-        "State_id:": "NC"
+        "city_name": "Apex",
+        "state_id": "NC"
     }
 ]
