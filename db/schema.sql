@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS CityReview_db;
+DROP DATABASE IF EXISTS city_review_db;
 
-CREATE DATABASE CityReview_db;
+CREATE DATABASE city_review_db;
