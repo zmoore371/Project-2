@@ -23,8 +23,9 @@ City.init(
             allowNull: false, 
         },
     },
-    {//hummmm???
+    {
         sequelize,
+        timestamps: false,
         freezeTableName: true,
         underscored: true,
         modelName: 'city',
