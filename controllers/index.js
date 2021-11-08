@@ -11,4 +11,15 @@ router.get('/', async (req, res) => {
     // res.send('Hello World!')
 });
 
+router.get('/city', async (req, res) => {
+    res.render('city');
+});
+
+router.get('/myaccount', async (req, res) => {
+    res.render('myaccount');
+});
+
+router.get('/reviews', async (req, res) => {
+    res.render('reviews');
+});
 module.exports = router;
