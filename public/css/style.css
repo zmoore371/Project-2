@@ -4,10 +4,11 @@
 
 :root {
   --darkest: #040303ff;
-  --slate-gray: #3a4e48ff;
-  --cool: #6a7b76ff;
-  --warm: #8b9d83ff;
-  --neutral: #beb0a7ff;
+  --purple: #870058ff;
+  --burgundy: #a4303fff;
+  --champagne: #f2d0a4ff;
+  --almond: #ffecccff;
+  --tea: #c8d6afff;
 }
 
 /* --------------------*/
@@ -22,6 +23,12 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/* Default font size - 1em = 16px - 2.1rem = 21px */
+
+html {
+  font-size: 62.5%;
 }
 
 /* Reset margins */
@@ -43,7 +50,11 @@ figure {
 body {
   line-height: 1.5;
   min-height: 100vh;
-  font-family: "Rubik", sans-serif;
+  font-family: "Zen Antique", serif;
+}
+
+main {
+  font-size: 2rem;
 }
 
 /*make images easier to work with */
@@ -96,10 +107,136 @@ select {
   max-width: 80rem;
 }
 
-.left {
-  float: left;
+.justify-center {
+  justify-content: center;
 }
 
-.right {
-  float: right;
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+/* --------------------*/
+/* Nav                 */
+/* --------------------*/
+
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: var(--darkest);
+  color: var(--almond);
+  font-size: 1rem;
+  text-shadow: 2px 2px 5px var(--almond);
+  border-bottom: 3px double var(--purple);
+}
+
+.title-container,
+.subtitle-container {
+  background-color: var(--darkest);
+  color: var(--almond);
+}
+
+.title-container {
+  font-size: 2rem;
+  border-bottom: 3px double var(--purple);
+  padding: 2rem 0;
+}
+
+.title {
+  font-size: 2em;
+  margin-left: 0.5em;
+  margin-top: 1rem;
+}
+
+.subtitle {
+  text-shadow: none;
+  font-size: 1.6rem;
+}
+
+.subtitle-container {
+  border-bottom: 3px double var(--purple);
+  padding: 1rem 0;
+}
+
+nav ol {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  font-size: 2em;
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: var(--almond);
+  margin: 3em;
+}
+
+.nav-btn:hover,
+.city-list:hover {
+  color: inherit;
+  border-bottom: 3px solid var(--purple);
+}
+
+/* --------------------*/
+/* Picture carousel    */
+/* --------------------*/
+
+.hero {
+  margin-bottom: 3rem;
+}
+.mySlides {
+  /* width: 60%; */
+  display: flex;
+  justify-content: center;
+}
+
+.trending-header {
+  background-color: var(--burgundy);
+  color: var(--almond);
+}
+
+.login-container {
+  flex-direction: column;
+  text-align: center;
+  border: 5px double black;
+  border-radius: 3px;
+  margin-top: 6rem;
+}
+
+.login-header {
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.login-btn-container {
+  padding-top: 2rem;
+}
+
+.user-container {
+  padding-bottom: 2rem;
+}
+
+.login-btn {
+  margin-right: 3rem;
+}
+
+.city-list,
+.brand-home {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-home:hover {
+  color: inherit;
+}
+
+.viral-header {
+  background-color: var(--tea);
+  color: var(--darkest);
+}
+
+.feed-container {
+  margin-top: 6rem;
 }
