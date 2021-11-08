@@ -5,6 +5,7 @@ class City extends Model { }
 
 City.init(
     {
+        //properties/fields defining the class - table schema
         id: {
             type: DataTypes.INTEGER,
             allowNull: false,
@@ -22,6 +23,7 @@ City.init(
     },
     {
         sequelize,
+        timestamps: false,
         freezeTableName: true,
         underscored: true,
         modelName: 'city',
