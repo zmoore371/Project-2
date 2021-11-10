@@ -12,7 +12,7 @@ router.use('/city', cityRoutes);
 const userRoutes = require('./userRoutes');
 // const projectRoutes = require('./projectRoutes');
 
-router.use('/users', userRoutes);
+router.use('/user', userRoutes);
 // router.use('/projects', projectRoutes);
 
 module.exports = router;
