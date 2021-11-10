@@ -42,6 +42,13 @@ User.init(
       validate: {
         len: [8],
       },
+      review_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'review',
+          key: 'id'
+        }
+      },
     },
   },
   {
@@ -49,13 +56,13 @@ User.init(
       beforeCreate: async (newUserData) => {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
-      },
+      }
     },
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: 'user'
   }
 );
 
