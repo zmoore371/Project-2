@@ -32,3 +32,16 @@ async function login(e) {
 }
 
 document.getElementById("login-form").addEventListener('click', login);
+
+function getReview () {
+    fetch('/api/review')
+    .then((res) => {
+        if(res.ok) {
+            res.json()
+            console.log("_----------------_")
+            console.log(res)
+        }
+    })
+}
+
+getReview()
