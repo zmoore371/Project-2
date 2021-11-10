@@ -120,8 +120,8 @@ select {
 /* --------------------*/
 
 nav {
+  height: 100px;
   width: 100%;
-  min-height: 15vh;
   background-color: var(--darkest);
   color: var(--almond);
   font-size: 1rem;
@@ -157,7 +157,7 @@ nav {
   padding: 1rem 0;
 }
 
-nav ul {
+nav ol {
   padding: 0;
   margin: 0;
 }
@@ -165,13 +165,12 @@ nav ul {
 nav li {
   display: inline;
   font-size: 2em;
-  margin-top: 3rem;
 }
 
 .nav-btn {
   text-decoration: none;
   color: var(--almond);
-  margin: 2em;
+  margin: 3em;
 }
 
 .nav-btn:hover,
@@ -180,34 +179,6 @@ nav li {
   border-bottom: 3px solid var(--purple);
 }
 
-.search-prompt {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.search-input {
-  width: 20rem;
-  height: 3rem;
-  margin-right: 1rem;
-  font-size: 1.5rem;
-}
-
-.search-btn {
-  height: 3rem;
-  width: 10rem;
-  font-size: 1.5rem;
-}
-
-.search-form {
-  display: inline-flex;
-}
-
-.search-container {
-  border: 3px solid var(--purple);
-  border-radius: 8px;
-  padding: 2rem;
-  margin: 2rem;
-}
 /* --------------------*/
 /* Picture carousel    */
 /* --------------------*/
@@ -232,7 +203,6 @@ nav li {
   border: 5px double black;
   border-radius: 3px;
   margin-top: 6rem;
-  margin-bottom: 6rem;
 }
 
 .login-header {
@@ -269,24 +239,4 @@ nav li {
 
 .feed-container {
   margin-top: 6rem;
-}
-
-/* --------------------*/
-/* Registration page   */
-/* --------------------*/
-
-.regContainer {
-  margin-top: 6rem;
-  padding: 0 6rem;
-}
-
-.reg-btn {
-  color: inherit;
-  text-decoration: none;
-}
-
-.login-btn:hover,
-.reg-btn:hover {
-  color: inherit;
-  opacity: 70%;
 }

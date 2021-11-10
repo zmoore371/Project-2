@@ -1,42 +1,22 @@
 [
-  {
-    "city_name": "San Francisco",
-    "state_id": "CA"
-  },
-  {
-    "city_name": "Denver",
-    "state_id": "CO"
-  },
-  {
-    "city_name": "New York",
-    "state_id": "NY"
-  },
-  {
-    "city_name": "Seattle",
-    "state_id": "WA"
-  },
-  {
-    "city_name": "Portland",
-    "state_id": "OR"
-  },
-  {
-    "city_name": "Tokyo",
-    "state_id": "Japan"
-  },
-  {
-    "city_name": "Banff, Alberta",
-    "state_id": "Canada"
-  },
-  {
-    "city_name": "Paris",
-    "state_id": "France"
-  },
-  {
-    "city_name": "Dubai",
-    "state_id": "United Arab Emirates"
-  },
-  {
-    "city_name": "South Island",
-    "state_id": "New Zealand"
-  }
+    {
+        "city_name": "Sanford",
+        "state_id": "NC"
+    },
+    {
+        "city_name": "Sanford",
+        "state_id": "FL"
+    },
+    {
+        "city_name": "Raleigh",
+        "state_id": "NC"
+    },
+    {
+        "city_name": "Cary",
+        "state_id": "NC"
+    },
+    {
+        "city_name": "Apex",
+        "state_id": "NC"
+    }
 ]
