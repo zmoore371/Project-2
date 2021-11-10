@@ -33,15 +33,39 @@ async function login(e) {
 
 document.getElementById("login-form").addEventListener('click', login);
 
+
+//this pulls data down from our api for all
 function getReview () {
     fetch('/api/review')
     .then((res) => {
         if(res.ok) {
-            res.json()
-            console.log("_----------------_")
-            console.log(res)
+            res.json().then(function (data){
+                console.log(data)
+            })
+        } else{
+            alert("Nah")
+            
+        }
+    })
+}
+
+//pulls api data to get information by state id
+function getReviewByState() {
+    let state = "NC"
+    let fetchUrl = "api/review/stateId/" + state
+
+    fetch(fetchUrl)
+    .then((res) => {
+        if(res.ok) {
+            res.json().then(function (data){
+                console.log(data)
+            })
+        } else{
+            alert("Nah")
+            
         }
     })
 }
 
 getReview()
+getReviewByState()
