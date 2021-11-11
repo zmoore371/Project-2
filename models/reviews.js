@@ -11,7 +11,34 @@ Review.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        city_review: {
+        city_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'city',
+                key: 'id'
+            },
+        },
+        rating: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        category: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        business: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        businessAddress: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        recommend: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        review: {
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -26,13 +53,7 @@ Review.init(
                 key: 'id'
             },
         },
-        city_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'city',
-                key: 'id'
-            },
-        },
+
     },
     {
         sequelize: sequelize,

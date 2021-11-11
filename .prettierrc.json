@@ -1,0 +1,8 @@
+{
+  "singleQuote": true,
+  "semicolon": true,
+  "trailingComma": "es5",
+  "bracketSpacing": true,
+  "allowParens": "always",
+  "insertPragma": true
+}
