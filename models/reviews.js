@@ -11,14 +11,6 @@ Review.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        user_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-        },
-        city_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-        },
         city_review: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -26,14 +18,28 @@ Review.init(
         review_date: {
             type: DataTypes.DATE,
             allowNull: false,
-        }
+        },
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'user',
+                key: 'id'
+            },
+        },
+        city_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'city',
+                key: 'id'
+            },
+        },
     },
     {
-        sequelize,
+        sequelize: sequelize,
         freezeTableName: true,
         timestamps: false,
         underscored: true,
-        modelName: 'review',
+        modelName: 'review'
     }
 );
 
