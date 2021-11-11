@@ -1,9 +1,14 @@
-/* --------------------*/
+/**
+ * /* --------------------
+ *
+ * @format
+ */
+
 /* Custom Properties   */
 /* --------------------*/
 
 :root {
-  --darkest: #040303ff;
+  --darkest: #031615;
   --purple: #870058ff;
   --burgundy: #a4303fff;
   --champagne: #f2d0a4ff;
@@ -50,7 +55,7 @@ figure {
 body {
   line-height: 1.5;
   min-height: 100vh;
-  font-family: "Zen Antique", serif;
+  font-family: 'Zen Antique', serif;
 }
 
 main {
@@ -125,8 +130,7 @@ nav {
   background-color: var(--darkest);
   color: var(--almond);
   font-size: 1rem;
-  text-shadow: 2px 2px 5px var(--almond);
-  border-bottom: 3px double var(--purple);
+  border-bottom: 3px double var(--tea);
 }
 
 .title-container,
@@ -137,7 +141,7 @@ nav {
 
 .title-container {
   font-size: 2rem;
-  border-bottom: 3px double var(--purple);
+  border-bottom: 3px double var(--tea);
   padding: 2rem 0;
 }
 
@@ -148,12 +152,11 @@ nav {
 }
 
 .subtitle {
-  text-shadow: none;
   font-size: 1.6rem;
 }
 
 .subtitle-container {
-  border-bottom: 3px double var(--purple);
+  border-bottom: 3px double var(--tea);
   padding: 1rem 0;
 }
 
@@ -177,7 +180,7 @@ nav li {
 .nav-btn:hover,
 .city-list:hover {
   color: inherit;
-  border-bottom: 3px solid var(--purple);
+  border-bottom: 3px solid var(--tea);
 }
 
 .search-prompt {
@@ -186,7 +189,7 @@ nav li {
 }
 
 .search-input {
-  width: 20rem;
+  width: 50rem;
   height: 3rem;
   margin-right: 1rem;
   font-size: 1.5rem;
@@ -203,11 +206,12 @@ nav li {
 }
 
 .search-container {
-  border: 3px solid var(--purple);
+  border: 3px solid var(--tea);
   border-radius: 8px;
   padding: 2rem;
   margin: 2rem;
 }
+
 /* --------------------*/
 /* Picture carousel    */
 /* --------------------*/
@@ -226,7 +230,12 @@ nav li {
   color: var(--almond);
 }
 
-.login-container {
+/* --------------------*/
+/* Login section       */
+/* --------------------*/
+
+.login-container,
+#review {
   flex-direction: column;
   text-align: center;
   border: 5px double black;
@@ -235,7 +244,8 @@ nav li {
   margin-bottom: 6rem;
 }
 
-.login-header {
+.login-header,
+.review-header {
   font-weight: bold;
   padding-bottom: 1rem;
 }
@@ -280,13 +290,40 @@ nav li {
   padding: 0 6rem;
 }
 
-.reg-btn {
+.reg-btn,
+.submit-btn {
   color: inherit;
   text-decoration: none;
 }
 
 .login-btn:hover,
-.reg-btn:hover {
+.reg-btn:hover,
+.submit-btn:hover {
   color: inherit;
-  opacity: 70%;
+  opacity: 80%;
+}
+
+/* ---------------------*/
+/* createReview partial */
+/* ---------------------*/
+
+#review-freeform {
+  width: 100%;
+}
+
+#review-subtitle {
+  font-size: 1.5rem;
+}
+
+footer {
+  width: 100%;
+  min-height: 8vh;
+  background-color: var(--darkest);
+  color: var(--almond);
+  font-size: 2rem;
+  border-bottom: 3px double var(--tea);
+}
+
+.footer-subtitle {
+  font-size: 1.5rem;
 }

@@ -13,11 +13,11 @@ router.use('/api', apiRoutes);
 
 
 router.get('/', async (req, res) => {
-    res.render('homepage');
+    res.render('pages/homepage');
 });
 
 router.get('/register', async (req, res) => {
-    res.render('register');
+    res.render('pages/register');
 });
 
 router.post('/register', async (req, res) => {
@@ -30,28 +30,28 @@ router.post('/register', async (req, res) => {
             email: req.body.email,
             password: hashedPassword
         })
-        res.redirect('homepage');
+        res.redirect('pages/homepage');
     } catch {
-        res.redirect('register');
+        res.redirect('pages/register');
     }
     console.log(User);
 });
 
 router.delete('/logout', (req, res) => {
     req.logout();
-    req.redirect('homepage')
+    req.redirect('pages/homepage')
 })
 
 function checkAuth(req, res, next) {
     if (req.isAuthenticated()) {
         return next()
     }
-    res.redirect('homepage#login')
+    res.redirect('pages/homepage#login')
 }
 
 function checkNotAuth(req, res, next) {
     if (req.isAuthenticated()) {
-        return res.redirect('homepage')
+        return res.redirect('pages/homepage')
     }
     next()
 }
