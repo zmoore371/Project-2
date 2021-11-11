@@ -1,8 +1,9 @@
 const router = require('express').Router();
 
 
+
 router.get('/', async (req, res) => {
-    res.render('homepage');
+    res.render('pages/homepage');
 });
 
 router.get('/city', async (req, res) => {
@@ -10,33 +11,20 @@ router.get('/city', async (req, res) => {
 });
 
 router.get('/myaccount', async (req, res) => {
-    res.render('myaccount');
+    res.render('pages/myaccount');
 });
 
 router.get('/reviews', async (req, res) => {
-    res.render('reviews');
+    res.render('pages/reviews');
 });
 
 router.get('/register', (req, res) => {
-    res.render('register')
+    res.render('pages/register')
 });
-
-// router.get('/city', async (req, res) => {
-//     res.render('city');
-// });
-
-// router.get('/myaccount', async (req, res) => {
-//     res.render('myaccount');
-// });
-
-// router.get('/reviews', async (req, res) => {
-//     res.render('reviews');
-// });
-
 
 
 router.get('/homepage', async (req, res) => {
-    res.render('homepage');
+    res.render('pages/homepage');
 });
 
 module.exports = router;

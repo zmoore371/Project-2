@@ -1,0 +1,70 @@
+<section id="review" class="write-review container flex justify-center">
+    <script src="https://use.fontawesome.com/a6f0361695.js"></script>
+
+    <h2 id="review-title"><strong>GET TO REVIEWING</strong></h2>
+    <h6 id="review-subtitle">Help wanderlusters plan their next adventures.</h6>
+    <form id="review-form">
+        <label for="city"><i class="fa fa-globe" aria-hidden="true"></i> What city were you in?</label><br>
+        <input type="text" id="city-name" placeholder="City and State/Country" name="city"><br><br>
+
+
+
+        <div class="col-md-4 input-group">
+            <span class="input-group-addon"><i class="fa fa-heart" style="color: red"></i> How much did you love
+                it?</span>
+            <select class=" form-control" id="rate">
+                <option value="1star">1</option>
+                <option value="2stars">2</option>
+                <option value="3stars">3</option>
+                <option value="4stars">4</option>
+                <option value="5stars">5</option>
+            </select>
+        </div>
+
+
+
+        <label for="category"><i class="fa fa-thumb-tack" aria-hidden="true"></i> Categories (select all that
+            apply):</label><br>
+        <input type="checkbox" id="restaurant" name="category" value="Restaurant">
+        <label for="restaurant">Restaurant</label>
+        <input type="checkbox" id="hiking" name="category" value="Hiking">
+        <label for="hiking">Hiking</label>
+        <input type="checkbox" id="landmark" name="category" value="Landmark">
+        <label for="landmark">Landmark</label>
+        <input type="checkbox" id="shopping" name="category" value="Shopping">
+        <label for="shopping">Shopping</label>
+        <input type="checkbox" id="explore" name="category" value="Explore">
+        <label for="explore">Explore</label>
+        <input type="checkbox" id="relax" name="category" value="Relax">
+        <label for="relax">Relax</label>
+        <input type="checkbox" id="brunch" name="category" value="Brunch">
+        <label for="brunch">Brunch</label>
+        <input type="checkbox" id="free" name="category" value="Free">
+        <label for="free">Free</label>
+        <input type="checkbox" id="cheap" name="category" value="$">
+        <label for="cheap">$</label>
+        <input type="checkbox" id="moderate-cost" name="category" value="$$">
+        <label for="moderate">$$</label>
+        <input type="checkbox" id="expensive" name="category" value="$$$">
+        <label for="expensive">$$$</label><br><br>
+
+        <label for="place"><i class="fa fa-building-o" aria-hidden="true"></i> Place name:</label><br>
+        <input type="text" id="place-name" name="place" placeholder="Business Name"><br><br>
+
+        <label for="place-address"><i class="fa fa-map-marker" aria-hidden="true"></i> Place address:</label><br>
+        <input type="text" id="place-address" name="place-address"><br><br>
+
+        <label for="recommend">Would you recommend this place to a friend?</label><br>
+        <input type="radio" id="yes" name="recommend">
+        <label for="yes">Yes <i class="fa fa-thumbs-up" aria-hidden="true"></i></label>
+        <input type="radio" id="no" name="recommend">
+        <label for="no">No <i class="fa fa-thumbs-down" aria-hidden="true"></i></label><br><br>
+
+        <label for="review-freeform"><i class="fa fa-pencil"></i> Anything to add?</label><br>
+        <textarea type="text" id="review-freeform" placeholder="Convince us to check it out."
+            name="review-freeform"></textarea><br><br>
+
+        <button class="submit-btn" type="submit">Share</button>
+
+    </form>
+</section>
