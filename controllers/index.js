@@ -1,32 +1,16 @@
+
 require('dotenv').config();
 const router = require('express').Router();
+const homeRoutes = require('./homeRoutes');
+const apiRoutes = require('./api');
 const express = require('express');
 const bcrypt = require('bcrypt');
 const User = require('../models/users');
-const passport = require('passport');
-const flash = require('express-flash');
 const session = require('express-session');
-const methodOverride = require('method-override')
 
+router.use('/', homeRoutes);
+router.use('/api', apiRoutes);
 
-
-const initializePassport = require('../passport-config');
-initializePassport(
-    passport,
-    username => User.find(user => user.username === username)
-);
-
-router.use(express.urlencoded({ extended: false }));
-router.use(flash());
-router.use(session({
-    secret: process.env.session_secret,
-    resave: false,
-    saveUninitialized: false
-}));
-
-router.use(passport.initialize());
-router.use(passport.session())
-router.use(methodOverride('_method'));
 
 router.get('/', async (req, res) => {
     res.render('homepage');
@@ -51,25 +35,6 @@ router.post('/register', async (req, res) => {
         res.redirect('register');
     }
     console.log(User);
-});
-
-router.post('/login', passport.authenticate('local', {
-    successRedirect: 'homepage',
-    failureRedirect: 'login',
-    failureFlash: true
-}))
-
-
-router.get('/city', async (req, res) => {
-    res.render('city');
-});
-
-router.get('/myaccount', async (req, res) => {
-    res.render('myaccount');
-});
-
-router.get('/reviews', async (req, res) => {
-    res.render('reviews');
 });
 
 router.delete('/logout', (req, res) => {
