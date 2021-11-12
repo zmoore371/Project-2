@@ -327,3 +327,51 @@ footer {
 .footer-subtitle {
   font-size: 1.5rem;
 }
+
+/* --------------------*/
+/* City Page   */
+/* --------------------*/
+
+.revCategories {
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.revcatAside {
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.cityh1 {
+  margin-bottom: 3rem;
+}
+
+/* --------------------*/
+/* My Account Page   */
+/* --------------------*/
+
+.accInformation {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  height: 50vh;
+}
+
+.accAddReview {
+ margin-top: 3rem;
+ height: 50vh;
+ margin-left: 3rem;
+}
+.accMyReview {
+  margin-left: 3rem;
+  margin-bottom:3rem;
+  height: 40vh;
+}
+
+.full-border {
+  content: '';
+  box-sizing: border-box;
+  border: 4px solid transparent;
+  border-image: linear-gradient(to top, var(--purple) 0%, var(--champagne) 100%);
+  border-image-slice: 1;
+}
