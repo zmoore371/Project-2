@@ -1,0 +1,53 @@
+To create user (POST)
+route = localhost:3001/api/user
+
+data to be passed
+{
+	"firstName": "Zachary",
+	"lastName": "Moore",
+	"username": "zmoore371",
+	"email": "zmoore371@gmail.com",
+	"password": "12345678"
+}
+------------------------------------------------------------------------
+To Login (POST)
+route = localhost:3001/api/user/login
+
+data to be passed
+{
+	"email": "Zmoore371@gmail.com",
+	"password": "12345678"
+}
+------------------------------------------------------------------------
+To Logout (POST)
+route = localhost:3001/api/user/logout
+
+data to be passed
+{
+	"email": "Zmoor371@gmail.com"
+}
+
+To get all reviews (GET)
+route = localhost:3001/api/review
+------------------------------------------------------------------------
+to get reviews by city name(GET) - last entry can be changed to any city
+route localhost:3001/api/review/city/san francisco
+------------------------------------------------------------------------
+To create a review(POST)
+localhost:3001/api/review
+
+data to be passed 
+
+{
+	"review": "cant wait to go back",
+	"rating": "4",
+	"category": "Fishing",
+	"business": "McApplebees",
+	"businessAddress": "1234 Maple Street",
+	"recommend": "yes",
+	"city_id": "2"
+}
+------------------------------------------------------------------------
+To view localhost:3001/myaccount (myaccount page) you need to log in first through insomnia using the login route then you can access the page
+
+
