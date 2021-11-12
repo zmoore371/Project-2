@@ -38,5 +38,14 @@
   {
     "city_name": "South Island",
     "state_id": "New Zealand"
+  },
+  {
+    "city_name": "Raleigh",
+    "state_id": "North Carolina"
+  },
+  {
+    "city_name": "Columbus ",
+    "state_id": "Ohio"
   }
+
 ]
