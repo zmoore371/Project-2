@@ -1,12 +1,12 @@
 [
-    {
-        "review": "cant wait to go back",
-	"rating": "4",
-	"category": "Fishing",
-	"business": "McApplebees",
-	"businessAddress": "1234 Maple Street",
-	"recommend": "yes",
-	"city_id": "1",
-        "review_date": "11/06/2021"
-    }
+  {
+    "title": "This place is epic!",
+    "review": "cant wait to go back",
+    "rating": "4",
+    "category": "Fishing",
+    "business": "McApplebees",
+    "businessAddress": "1234 Maple Street",
+    "recommend": "yes",
+    "city_id": "1"
+  }
 ]

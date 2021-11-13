@@ -6,9 +6,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +16,8 @@
 
 
 <body>
-  <div class="">
-    <header class="">
+  <div>
+    <header>
 
       <div class="title-container text-center">
         <h1 class="title"><a class="brand-home" href="/">Wanderlust Reviews</a></h1>
@@ -30,30 +28,42 @@
         <div>
           <ul>
             <li><a class="nav-btn" href="/">Home</a></li>
-            <li><a class="nav-btn" href="">Feed</a></li>
+            <li><a class="nav-btn" href="feed">Feed</a></li>
             <li><a class="nav-btn" href="myaccount">Account</a></li>
             <li><a class="nav-btn" href="register">Become a Wanderluster</a></li>
-            <li><a class="nav-btn" href="#login">Login</a></li>
+            <li><a class="nav-btn" href="homepage#login">Login</a></li>
           </ul>
         </div>
 
-        <div class="search-container">
-          <p class="search-prompt">Where are you going?</p>
-          <form class="search-form">
-            <input class="search-input" type="search" placeholder="City and State/Country" aria-label="Search">
-            <button class="search-btn" type="submit">Search</button>
-          </form>
-        </div>
+        <form id="city-select" class="flex justify-center" action="#">
+          <label id="drop-label" class="flex align-center" for="question">Where are we going?</label>
+          <select name="city" id="dropdown">
+            <option value="select">Select a City</option>
+            <option value="california">San Francisco, CA</option>
+            <option value="colorado">Denver, CO</option>
+            <option value="newyork">New York, NY</option>
+            <option value="washington">Seattle, WA</option>
+            <option value="oregon">Portland, OR</option>
+            <option value="japan">Tokyo, Japan</option>
+            <option value="canada">Banff, Alberta, Canada</option>
+            <option value="france">Paris, France</option>
+            <option value="newzealand">South Island, New Zealand</option>
+          </select>
+          <input id="submit-btn" type="submit" value="Submit" />
+        </form>
+  </div>
 
-      </nav>
 
-      <div class="subtitle-container text-center">
-        <p class="subtitle">Plan epic adventures.</p>
-      </div>
-    </header>
-    <main>
-      {{{ body }}}
-    </main>
+  </nav>
+
+  <div class="subtitle-container text-center">
+    <p class="subtitle">Plan epic adventures.</p>
+  </div>
+  </header>
+  <main>
+    {{{ body }}}
+
+  </main>
   </div>
 
   <footer class="flex text-center flex-column">
