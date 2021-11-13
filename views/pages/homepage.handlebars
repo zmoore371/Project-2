@@ -13,7 +13,7 @@
 </section>
 
 <section class="trending-cities flex justify-center">
-  <div class="card">
+  <div class="card shadow-lg">
     <div class="trending-header card-header text-center">
       Trending Cities - U.S.📈
     </div>
@@ -26,7 +26,7 @@
     </ul>
   </div>
 
-  <div class="card">
+  <div class="card shadow-lg">
     <div class="trending-header card-header text-center">
       Trending Cities - World📈
     </div>
@@ -39,8 +39,9 @@
     </ul>
   </div>
 </section>
+
 <section class="feed-container container">
-  <div class="card">
+  <div class="card shadow-lg">
     <div class="viral-header card-header text-center">
       Viral Reviews 📈
     </div>
@@ -56,29 +57,11 @@
   </div>
 </section>
 
-<section id="login" class="login-container container flex justify-center">
-  <h2 class="login-header">
-    Login or Create Account
-  </h2>
-  <form id="login-form">
-    <div class="login-input-container container">
-      <div class="user-container">
-        <label for="uname"><b>Username</b></label>
-        <input id="username" type="text" placeholder="Enter Username" name="uname" required />
-      </div>
-      <div>
-        <label for="psw"><b>Password</b></label>
-        <input id="password" type="password" placeholder="Enter Password" name="psw" required />
-      </div>
-      <div class="login-btn-container container">
-        <button class="login-btn" type="submit">Login</button>
-        <button class="register-btn" type="button">
-          <a class="reg-btn" href="register">Become a Wanderluster</a>
-        </button>
-      </div>
-    </div>
-  </form>
+<section id="login" class="login-container container flex justify-center shadow-lg">
+  {{#if logged_in}}
+  {{> createReview}}
+  {{else}}
+  {{> login}}
+  {{/if}}
 </section>
 <script src="js/homepage.js"></script>
-
-{{> createReview}}

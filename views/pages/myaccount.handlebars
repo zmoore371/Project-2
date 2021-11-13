@@ -1,14 +1,27 @@
-<div class="">
-<div class="row">
-    <div class="full-border col-4 accInformation">
-        <p1>User Information Here</p1>
+<div class="profile-top flex flex-column align-center">
+
+    <div class="flex flex-column accMyReview shadow-lg">
+        <div class="rev-title">
+            <p1 class="accHeader"><strong>My Reviews</strong></p1>
+        </div>
+        <div class="rev-body">
+            {{> profileReview}}
+        </div>
     </div>
 
-        <div class="full-border col-7 accAddReview">
-        <p1>Add a review</p1>
-        </div>
-        <div class="full-border col-4 accMyReview">
-            <p1>My Reviews</p1>
-        </div>
+
+    <div class="accAddReview shadow-lg">
+        {{> createReview}}
+    </div>
+
+
+    <div class="accInformation shadow-lg">
+        <h1 class="about-section"><strong>About</strong></h1><br>
+        <p class="member-name"><i class="fa fa-user" aria-hidden="true"></i> Jane Doe</p>
+        <p class="username"><i class="fa fa-id-badge" aria-hidden="true"></i> @gypsy_goddess</p>
+        <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Tempe, Arizona</p>
     </div>
 </div>
+
+
+<script src="https://use.fontawesome.com/a6f0361695.js"></script>
