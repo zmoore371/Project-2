@@ -1,5 +1,3 @@
-
-//Picture carousel on homepage.handlebars
 var slideIndex = 0;
 carousel();
 
@@ -15,22 +13,36 @@ function carousel() {
     setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
-//Login
-async function login(e) {
-    e.preventDefault();
-    const username = document.getElementById("username").value.trim();
-    const password = document.getElementById("password").value.trim();
 
-    const response = await fetch('/api/user/login', {
-        method: 'POST',
-        body: JSON.stringify({ username, password })
-    })
+//For login on main page
+const loginFormHandler = async (event) => {
+    event.preventDefault();
 
-    // if (response.ok) {
+    const email = document.querySelector('#username').value.trim();
+    const password = document.querySelector('#password').value.trim();
 
-    // }
+    if (email && password) {
+        const response = await fetch('/api/user/login', {
+            method: 'POST',
+            body: JSON.stringify( {email, password} ),
+            headers: {'Content-Type': 'application/json'}
+            
+        })
+        if (response.ok) {
+            document.location.replace('/myaccount')
+        } else {
+            alert("error")
+        }
 
-    console.log(response);
+    }
 }
 
-document.getElementById("login-form").addEventListener('click', login);
+
+document.querySelector('.login-form')
+document.addEventListener('submit', loginFormHandler);
+
+// const submitReviewHandler = async (event) => {
+//     event.preventDefault();
+
+//     const city = document.querySelector('')
+// }
