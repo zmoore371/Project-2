@@ -75,23 +75,3 @@ router.get('/user', async (req, res) => {
 
 module.exports = router;
 
-// router.get('/:city', async (req, res) => {
-//     const data = await City.findAll({
-//         where: {city_name: req.params.city}
-        
-//     })
-//     .then((data) => {
-//         let cityId = data[0].dataValues.id
-//         const allReview =  Review.findAll({
-//             where: {city_id: cityId}
-//         })
-//         console.log(allReview)
-//         .catch((err) => {
-//             res.json(err)
-//         })
-//         res.json(allReview)
-//     })
-//     .catch((err) => {
-//         res.json(err)
-//     })
-// })
