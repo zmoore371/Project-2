@@ -1,56 +1,71 @@
 <section id="review" class="write-review container flex justify-center">
-    <h2 id="review-title"><strong>GET TO REVIEWING</strong></h2>
+
+    <h2 id="review-title"><strong>WRITE A REVIEW</strong></h2>
     <h6 id="review-subtitle">Help wanderlusters plan their next adventures.</h6>
-    <form id="review-form">
-        <label for="city"><i class="fa fa-globe" aria-hidden="true"></i> What city were you in?</label><br>
-        <input type="text" id="city-name" placeholder="City and State/Country" name="city"><br><br>
+    <form id="review-form"><br>
 
 
-
-        <div class="col-md-4 input-group">
-            <span class="input-group-addon"><i class="fa fa-heart" style="color: red"></i> How much did you love
-                it?</span>
-            <select class=" form-control" id="rate">
-                <option value="1star">1</option>
-                <option value="2stars">2</option>
-                <option value="3stars">3</option>
-                <option value="4stars">4</option>
-                <option value="5stars">5</option>
+        <div id="city-review" class="flex justify-center">
+            <label for="city"><i class="fa fa-globe" aria-hidden="true"></i> What city were you in?</label><br>
+            <select name="review" id="city-review-dropdown">
+                <option value="select">Select a City</option>
+                <option value="california">San Francisco, CA</option>
+                <option value="colorado">Denver, CO</option>
+                <option value="newyork">New York, NY</option>
+                <option value="washington">Seattle, WA</option>
+                <option value="oregon">Portland, OR</option>
+                <option value="japan">Tokyo, Japan</option>
+                <option value="canada">Banff, Alberta, Canada</option>
+                <option value="france">Paris, France</option>
+                <option value="newzealand">South Island, New Zealand</option>
             </select>
         </div>
+        <br>
 
+        <div id="rating" class="flex justify-center">
+            <label id="rating-drop" for="rating" id="rating"><i class="fa fa-heart" style="color: #a4303fff"></i> How
+                much did you love it?</label>
+            <select name="city" id="dropdown">
+                <option value="select">Select a rating</option>
+                <option value="five">5</option>
+                <option value="four">4</option>
+                <option value="three">3</option>
+                <option value="two">2</option>
+                <option value="one">1</option>
+            </select>
+        </div><br>
 
+        <div class="category-select">
+            <label for="lang">Categories (multi-select: ctrl + click)</label><br><br>
+            <select name="categorires" id="lang" multiple>
+                <option value="goodeats">Good Eats</option>
+                <option value="hiking">Hiking</option>
+                <option value="landmark">Landmark</option>
+                <option value="shopping">Shopping</option>
+                <option value="hidden">Hidden Gem</option>
+                <option value="explore">Explore</option>
+                <option value="relax">Relax</option>
+                <option value="brunch">Brunch</option>
+                <option value="beer">Local Brews</option>
+                <option value="must">Must See</option>
+                <option value="views">Epic Views</option>
+                <option value="free">Free</option>
+                <option value="cheap">$</option>
+                <option value="moderate">$$</option>
+                <option value="expensive">$$$</option>
+            </select>
+        </div><br>
 
-        <label for="category"><i class="fa fa-thumb-tack" aria-hidden="true"></i> Categories (select all that
-            apply):</label><br>
-        <input type="checkbox" id="restaurant" name="category" value="Restaurant">
-        <label for="restaurant">Restaurant</label>
-        <input type="checkbox" id="hiking" name="category" value="Hiking">
-        <label for="hiking">Hiking</label>
-        <input type="checkbox" id="landmark" name="category" value="Landmark">
-        <label for="landmark">Landmark</label>
-        <input type="checkbox" id="shopping" name="category" value="Shopping">
-        <label for="shopping">Shopping</label>
-        <input type="checkbox" id="explore" name="category" value="Explore">
-        <label for="explore">Explore</label>
-        <input type="checkbox" id="relax" name="category" value="Relax">
-        <label for="relax">Relax</label>
-        <input type="checkbox" id="brunch" name="category" value="Brunch">
-        <label for="brunch">Brunch</label>
-        <input type="checkbox" id="free" name="category" value="Free">
-        <label for="free">Free</label>
-        <input type="checkbox" id="cheap" name="category" value="$">
-        <label for="cheap">$</label>
-        <input type="checkbox" id="moderate-cost" name="category" value="$$">
-        <label for="moderate">$$</label>
-        <input type="checkbox" id="expensive" name="category" value="$$$">
-        <label for="expensive">$$$</label><br><br>
+        <div class="place-name flex justify-center">
+            <label for="place"><i class="fa fa-building-o" aria-hidden="true"></i> Place name:</label><br>
+            <input type="text" id="place-name" name="place" placeholder="Name of Location">
+        </div><br><br>
 
-        <label for="place"><i class="fa fa-building-o" aria-hidden="true"></i> Place name:</label><br>
-        <input type="text" id="place-name" name="place" placeholder="Business Name"><br><br>
-
-        <label for="place-address"><i class="fa fa-map-marker" aria-hidden="true"></i> Place address:</label><br>
-        <input type="text" id="place-address" name="place-address"><br><br>
+        <div class="address flex justify-center">
+            <label for="place-address"><i class="fa fa-map-marker" aria-hidden="true"></i> Address:</label><br>
+            <input type="text" id="place-address" name="place-address"
+                placeholder="123 Rainbow Rd, Sunshine, St, U.S.A.">
+        </div><br>
 
         <label for="recommend">Would you recommend this place to a friend?</label><br>
         <input type="radio" id="yes" name="recommend">
@@ -59,7 +74,7 @@
         <label for="no">No <i class="fa fa-thumbs-down" aria-hidden="true"></i></label><br><br>
 
         <label for="review-freeform"><i class="fa fa-pencil"></i> Anything to add?</label><br>
-        <textarea type="text" id="review-freeform" placeholder="Convince us to check it out."
+        <textarea type="text" id="review-freeform" placeholder="Convince us to check it out. If you want."
             name="review-freeform"></textarea><br><br>
 
         <button class="submit-btn" type="submit">Share</button>

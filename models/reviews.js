@@ -18,6 +18,10 @@ Review.init(
                 key: 'id'
             },
         },
+        title: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         rating: {
             type: DataTypes.INTEGER,
             allowNull: false

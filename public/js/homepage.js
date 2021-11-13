@@ -1,3 +1,5 @@
+
+//Picture carousel on homepage.handlebars
 var slideIndex = 0;
 carousel();
 
@@ -13,7 +15,7 @@ function carousel() {
     setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
-
+//Login
 async function login(e) {
     e.preventDefault();
     const username = document.getElementById("username").value.trim();

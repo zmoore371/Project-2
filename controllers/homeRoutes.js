@@ -14,8 +14,8 @@ router.get('/myaccount', async (req, res) => {
     res.render('pages/myaccount');
 });
 
-router.get('/reviews', async (req, res) => {
-    res.render('pages/reviews');
+router.get('/feed', async (req, res) => {
+    res.render('pages/feed');
 });
 
 router.get('/register', (req, res) => {
