@@ -4,7 +4,8 @@ const { User } = require('../models')
 
 
 router.get('/', async (req, res) => {
-    res.render('pages/homepage');
+    res.render('pages/homepage', { logged_in: req.session.logged_in });
+
 });
 
 router.get('/city', async (req, res) => {
@@ -28,14 +29,14 @@ router.get('/homepage', async (req, res) => {
     res.render('pages/homepage');
 });
 
-router.get('/myaccount', withAuth, async(req, res) => {
-    try{
+router.get('/myaccount', withAuth, async (req, res) => {
+    try {
         const userData = await User.findAll({
-            attributes: {exclude: ['password']},
-            order : [['username', 'ASC']], 
+            attributes: { exclude: ['password'] },
+            order: [['username', 'ASC']],
         })
-        
-        const users = userData.map((project) => project.get({plain:true}))
+
+        const users = userData.map((project) => project.get({ plain: true }))
         res.render('pages/myaccount', {
             users,
             logged_in: req.session.logged_in,

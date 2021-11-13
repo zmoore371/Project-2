@@ -31,7 +31,11 @@
             <li><a class="nav-btn" href="feed">Feed</a></li>
             <li><a class="nav-btn" href="myaccount">Account</a></li>
             <li><a class="nav-btn" href="register">Become a Wanderluster</a></li>
-            <li><a class="nav-btn" href="homepage#login">Login</a></li>
+            {{#if logged_in}}
+            <li><a class="logout-btn nav-btn" href="homepage">Logout</a></li>
+            {{else}}
+            <li><a class="login-btn nav-btn" href="homepage#login">Login</a></li>
+            {{/if}}
           </ul>
         </div>
 

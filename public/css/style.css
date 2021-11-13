@@ -257,7 +257,8 @@ nav li {
   padding-bottom: 2rem;
 }
 
-.login-btn {
+.login-btn,
+.logout-btn {
   margin-right: 3rem;
 }
 
@@ -296,6 +297,7 @@ nav li {
 }
 
 .login-btn:hover,
+.logout-btn:hover,
 .reg-btn:hover,
 .submit-btn:hover {
   color: inherit;
@@ -320,6 +322,10 @@ nav li {
 
 #review-subtitle {
   font-size: 1.8rem;
+}
+
+.review-input {
+  width: 25em;
 }
 
 /* --------------------*/
