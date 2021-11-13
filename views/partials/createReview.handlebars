@@ -21,6 +21,18 @@
             </select>
         </div>
 
+        <div id="rating" class="flex justify-center">
+            <label id="rating-drop" for="rating" id="rating"><i class="fa fa-heart" style="color: #a4303fff"></i> How
+                much did you love it?</label>
+            <select name="city" id="dropdown-rating">
+                <option value="select">Select a rating</option>
+                <option value="five">5</option>
+                <option value="four">4</option>
+                <option value="three">3</option>
+                <option value="two">2</option>
+                <option value="one">1</option>
+            </select>
+        </div><br>
 
 
         <label for="category"><i class="fa fa-thumb-tack" aria-hidden="true"></i> Categories (select all that
@@ -54,10 +66,12 @@
         <label for="place-address"><i class="fa fa-map-marker" aria-hidden="true"></i> Place address:</label><br>
         <input type="text" id="place-address" name="place-address"><br><br>
 
-        <label for="recommend">Would you recommend this place to a friend?</label><br>
-        <input type="radio" id="yes" name="recommend">
+        <label id="recommend" for="recommend">Would you recommend this place to a friend?</label><br>
+        
+        <input type="radio" id="yes" name="recommend" value="yes">
         <label for="yes">Yes <i class="fa fa-thumbs-up" aria-hidden="true"></i></label>
-        <input type="radio" id="no" name="recommend">
+        
+        <input type="radio" id="no" name="recommend" value="no">
         <label for="no">No <i class="fa fa-thumbs-down" aria-hidden="true"></i></label><br><br>
 
         <label for="review-freeform"><i class="fa fa-pencil"></i> Anything to add?</label><br>

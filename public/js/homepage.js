@@ -14,7 +14,8 @@ function carousel() {
 }
 
 
-//For login on main page
+//For login on main page---------------------------------------------------------
+
 const loginFormHandler = async (event) => {
     event.preventDefault();
 
@@ -37,12 +38,31 @@ const loginFormHandler = async (event) => {
     }
 }
 
-
 document.querySelector('.login-form')
 document.addEventListener('submit', loginFormHandler);
 
+//-----------------------------------------------------------------------------
 // const submitReviewHandler = async (event) => {
 //     event.preventDefault();
 
-//     const city = document.querySelector('')
+//     const city = document.querySelector('#city-review-dropdown').value
+//     const rating = document.querySelector('#dropdown-rating').value
+//     const category = document.querySelector('#lang').value
+//     const business = document.querySelector('#place-name').value.trim();
+//     const businessAddress = document.querySelector('#place-address').value.trim();
+//     const review = document.querySelector('#review-freeform').value.trim();
+//     const recommend = document.querySelector('input[type=radio][name="recommend"]:checked').value
+
+//     console.log(city, rating, category, business, businessAddress, recommend, review)
+//     data = {city, rating, category, business, businessAddress, recommend, review}
+//     getCityId(data)
 // }
+
+// const getCityId = async (data) => {
+//     console.log(data)
+//     let requestUrl = '/api/review/cityid' + data.city
+//     fetch()
+// }
+
+// document.querySelector('#review')
+// document.addEventListener('submit', submitReviewHandler)

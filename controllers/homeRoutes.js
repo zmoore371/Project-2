@@ -4,19 +4,16 @@ const { User } = require('../models')
 
 
 router.get('/', async (req, res) => {
-    res.render('pages/homepage');
+    res.render('pages/homepage', { logged_in: req.session.logged_in });
+
 });
 
 router.get('/city', async (req, res) => {
     res.render('city');
 });
 
-// router.get('/myaccount', withAuth, async (req, res) => {
-//     res.render('pages/myaccount');
-// });
-
-router.get('/reviews', async (req, res) => {
-    res.render('pages/reviews');
+router.get('/feed', async (req, res) => {
+    res.render('pages/feed');
 });
 
 router.get('/register', (req, res) => {
