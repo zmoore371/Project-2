@@ -14,21 +14,35 @@ function carousel() {
 }
 
 
-async function login(e) {
-    e.preventDefault();
-    const username = document.getElementById("username").value.trim();
-    const password = document.getElementById("password").value.trim();
+//For login on main page
+const loginFormHandler = async (event) => {
+    event.preventDefault();
 
-    const response = await fetch('/api/user/login', {
-        method: 'POST',
-        body: JSON.stringify({ username, password })
-    })
+    const email = document.querySelector('#username').value.trim();
+    const password = document.querySelector('#password').value.trim();
 
-    // if (response.ok) {
+    if (email && password) {
+        const response = await fetch('/api/user/login', {
+            method: 'POST',
+            body: JSON.stringify( {email, password} ),
+            headers: {'Content-Type': 'application/json'}
+            
+        })
+        if (response.ok) {
+            document.location.replace('/myaccount')
+        } else {
+            alert("error")
+        }
 
-    // }
-
-    console.log(response);
+    }
 }
 
-document.getElementById("login-form").addEventListener('click', login);
+
+document.querySelector('.login-form')
+document.addEventListener('submit', loginFormHandler);
+
+// const submitReviewHandler = async (event) => {
+//     event.preventDefault();
+
+//     const city = document.querySelector('')
+// }
