@@ -42,27 +42,35 @@ document.querySelector('.login-form')
 document.addEventListener('submit', loginFormHandler);
 
 //-----------------------------------------------------------------------------
-// const submitReviewHandler = async (event) => {
-//     event.preventDefault();
+const submitReviewHandler = async (event) => {
+    event.preventDefault();
 
-//     const city = document.querySelector('#city-review-dropdown').value
-//     const rating = document.querySelector('#dropdown-rating').value
-//     const category = document.querySelector('#lang').value
-//     const business = document.querySelector('#place-name').value.trim();
-//     const businessAddress = document.querySelector('#place-address').value.trim();
-//     const review = document.querySelector('#review-freeform').value.trim();
-//     const recommend = document.querySelector('input[type=radio][name="recommend"]:checked').value
+    const title = document.querySelector('#title').value.trim();
+    const city = document.querySelector('#city-review-dropdown').value
+    const rating = document.querySelector('#dropdown-rating').value
+    const category = document.querySelector('#lang').value
+    const business = document.querySelector('#place-name').value.trim();
+    const businessAddress = document.querySelector('#place-address').value.trim();
+    const review = document.querySelector('#review-freeform').value.trim();
+    const recommend = document.querySelector('input[type=radio][name="recommend"]:checked').value
 
-//     console.log(city, rating, category, business, businessAddress, recommend, review)
-//     data = {city, rating, category, business, businessAddress, recommend, review}
-//     getCityId(data)
-// }
+    console.log(title, city, rating, category, business, businessAddress, recommend, review)
+    data = {title, city, rating, category, business, businessAddress, recommend, review}
+    getCityId(data)
+}
 
-// const getCityId = async (data) => {
-//     console.log(data)
-//     let requestUrl = '/api/review/cityid' + data.city
-//     fetch()
-// }
+const getCityId = async (data) => {
+    console.log(data.city)
+    console.log(data)
 
-// document.querySelector('#review')
-// document.addEventListener('submit', submitReviewHandler)
+    let requestUrl = '/api/review/cityid/' + data.city
+    await fetch(requestUrl)
+            .then(response => response.json())
+            .then(city => console.log(city))
+    
+
+}    
+
+
+document.querySelector('#review')
+document.addEventListener('submit', submitReviewHandler)
