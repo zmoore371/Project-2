@@ -1,50 +1,90 @@
 [
   {
-    "firstName": "Lindsay",
-    "lastName": "Reiner",
-    "location": "Seattle, WA",
-    "username": "Sal",
-    "email": "sal@hotmail.com",
-    "password": "password12345"
+    "firstName": "Kim",
+    "lastName": "Kardashian",
+    "location": "Los Angeles, CA",
+    "username": "kkw",
+    "email": "kim@kkwbeauty.com",
+    "password": "p"
   },
   {
-    "firstName": "Lindsay",
-    "lastName": "Reiner",
+    "firstName": "Travis",
+    "lastName": "Barker",
     "location": "Seattle, WA",
-    "username": "Lernantino",
-    "email": "lernantino@gmail.com",
-    "password": "password12345"
+    "username": "XdrummerboyX",
+    "email": "tbarker@blink.com",
+    "password": "p"
   },
   {
-    "firstName": "Lindsay",
-    "lastName": "Reiner",
-    "location": "Seattle, WA",
-    "username": "Amiko",
-    "email": "amiko2k20@aol.com",
-    "password": "password12345"
+    "firstName": "Taylor",
+    "lastName": "Swift",
+    "location": "Nashville, TN",
+    "username": "bad_blood",
+    "email": "tswift@gmail.com",
+    "password": "p"
   },
   {
-    "firstName": "Lindsay",
-    "lastName": "Reiner",
-    "location": "Seattle, WA",
-    "username": "Jordan",
+    "firstName": "Beyonce",
+    "lastName": "Knowles",
+    "location": "Houston, TX",
+    "username": "queenbey",
     "email": "jordan99@msn.com",
-    "password": "password12345"
+    "password": "p"
   },
   {
-    "firstName": "Lindsay",
-    "lastName": "Reiner",
-    "location": "Seattle, WA",
-    "username": "Blake",
-    "email": "the_blake@yahoo.com",
-    "password": "password12345"
+    "firstName": "Onika",
+    "lastName": "Maraj",
+    "location": "Port of Spain, Trinidad",
+    "username": "barbie",
+    "email": "nickim@yahoo.com",
+    "password": "p"
   },
   {
-    "firstName": "Lindsay",
-    "lastName": "Reiner",
-    "location": "Seattle, WA",
-    "username": "Bill Oberkirsch",
-    "email": "bill@charter.net",
-    "password": "password12345"
+    "firstName": "Dermot",
+    "lastName": "Kennedy",
+    "location": "Dublin, Ireland",
+    "username": "dermotkennedy",
+    "email": "dkennedy@gmail.com",
+    "password": "p"
+  },
+  {
+    "firstName": "Dermot",
+    "lastName": "Kennedy",
+    "location": "Dublin, Ireland",
+    "username": "dermotkennedy",
+    "email": "dkennedy@gmail.com",
+    "password": "p"
+  },
+  {
+    "firstName": "Kylie",
+    "lastName": "Jenner",
+    "location": "Brooklyn, New York",
+    "username": "kyliejenner",
+    "email": "kyliejenner@gmail.com",
+    "password": "p"
+  },
+  {
+    "firstName": "Kanye",
+    "lastName": "West",
+    "location": "Atlanta, GA",
+    "username": "ye",
+    "email": "yeezus@gmail.com",
+    "password": "p"
+  },
+  {
+    "firstName": "Stefani",
+    "lastName": "Germanotta",
+    "location": "Pittsburgh, PA",
+    "username": "ladygaga",
+    "email": "stefani@gmail.com",
+    "password": "p"
+  },
+  {
+    "firstName": "Britney",
+    "lastName": "Spears",
+    "location": "McComb, MS",
+    "username": "itsbritneyb!tch",
+    "email": "britney@oops.com",
+    "password": "p"
   }
 ]
