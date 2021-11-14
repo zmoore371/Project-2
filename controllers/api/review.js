@@ -47,7 +47,7 @@ router.post('/', withAuth, async (req, res) => {
     }
 })
 
-router.get('/city/:city', async (req,res) => {
+router.get('/cityid/:city', async (req,res) => {
     const data = await City.findAll({
         where: {city_name: req.params.city},
         include: {model: Review},

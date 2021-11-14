@@ -98,5 +98,15 @@
     "businessAddress": "1234 Maple Street",
     "recommend": "yes",
     "city_id": "1"
+  },
+  {
+    "title": "This place is epic!",
+    "review": "cant wait to go back",
+    "rating": "4",
+    "category": "Fishing",
+    "business": "McApplebees",
+    "businessAddress": "1234 Maple Street",
+    "recommend": "yes",
+    "city_id": "1"
   }
 ]
