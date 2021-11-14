@@ -13,15 +13,15 @@
             <label for="city"><i class="fa fa-globe" aria-hidden="true"></i> What city were you in?</label><br>
             <select name="review" id="city-review-dropdown">
                 <option value="select">Select a City</option>
-                <option value="california">San Francisco, CA</option>
-                <option value="colorado">Denver, CO</option>
-                <option value="newyork">New York, NY</option>
-                <option value="washington">Seattle, WA</option>
-                <option value="oregon">Portland, OR</option>
-                <option value="japan">Tokyo, Japan</option>
-                <option value="canada">Banff, Alberta, Canada</option>
-                <option value="france">Paris, France</option>
-                <option value="newzealand">South Island, New Zealand</option>
+                <option value="san francisco">San Francisco, CA</option>
+                <option value="denver">Denver, CO</option>
+                <option value="new york">New York, NY</option>
+                <option value="seattle">Seattle, WA</option>
+                <option value="portland">Portland, OR</option>
+                <option value="tokyo">Tokyo, Japan</option>
+                <option value="banff">Banff, Alberta, Canada</option>
+                <option value="paris">Paris, France</option>
+                <option value="south island">South Island, New Zealand</option>
             </select>
         </div>
         <br>
@@ -29,13 +29,13 @@
         <div id="rating" class="flex justify-center">
             <label id="rating-drop" for="rating" id="rating"><i class="fa fa-heart" style="color: #a4303fff"></i> How
                 much did you love it?</label>
-            <select name="city" id="dropdown">
+            <select name="city" id="dropdown-rating">
                 <option value="select">Select a rating</option>
-                <option value="five">5</option>
-                <option value="four">4</option>
-                <option value="three">3</option>
-                <option value="two">2</option>
-                <option value="one">1</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
             </select>
         </div><br>
 
@@ -73,10 +73,12 @@
                 placeholder="123 Rainbow Rd, Sunshine, St, U.S.A.">
         </div><br>
 
-        <label for="recommend">Would you recommend this place to a friend?</label><br>
-        <input type="radio" id="yes" name="recommend">
+        <label id="recommend" for="recommend">Would you recommend this place to a friend?</label><br>
+        
+        <input type="radio" id="yes" name="recommend" value="yes">
         <label for="yes">Yes <i class="fa fa-thumbs-up" aria-hidden="true"></i></label>
-        <input type="radio" id="no" name="recommend">
+        
+        <input type="radio" id="no" name="recommend" value="no">
         <label for="no">No <i class="fa fa-thumbs-down" aria-hidden="true"></i></label><br><br>
 
         <label for="review-freeform"><i class="fa fa-pencil"></i> Anything to add?</label><br>
