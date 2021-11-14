@@ -9,12 +9,8 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/city', async (req, res) => {
-    res.render('city');
+    res.render('pages/city');
 });
-
-// router.get('/myaccount', withAuth, async (req, res) => {
-//     res.render('pages/myaccount');
-// });
 
 router.get('/feed', async (req, res) => {
     res.render('pages/feed');

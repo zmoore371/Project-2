@@ -3,6 +3,13 @@
  
 # Description  
 Do you love travelling? Are you active on social media? If you said yes to those two things, then you're going to want to be a part of the Wanderlust Reviews community! Want to go somewhere new? Pick a city and scour the reviews! Create a vetted trip itinerary from other wanderlusters just like you! Coming soon: saving reviews to a 'Bucket List' on your profile, city and place search powered by Google Maps, post pictures within your reviews, and much more! Stay tuned!  
+
+# Screenshot and URL's
+
+<img src="public/images/App screenshot.png" alt="website-screenshot">
+Live link via Heroku: 
+
+
 # Table of contents  
 [Installation](#installation)  
 [Usage](#usage)  

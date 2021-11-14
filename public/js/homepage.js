@@ -24,12 +24,13 @@ const loginFormHandler = async (event) => {
     if (email && password) {
         const response = await fetch('/api/user/login', {
             method: 'POST',
-            body: JSON.stringify( {email, password} ),
-            headers: {'Content-Type': 'application/json'}
-            
+            body: JSON.stringify({ email, password }),
+            headers: { 'Content-Type': 'application/json' }
+
         })
         if (response.ok) {
-            document.location.replace('/myaccount')
+            alert('Logged in successfully!');
+            document.location.replace('/myaccount');
         } else {
             alert("error")
         }
@@ -38,11 +39,26 @@ const loginFormHandler = async (event) => {
 }
 
 
-document.querySelector('.login-form')
+const loginForm = document.querySelector('.login-form')
 document.addEventListener('submit', loginFormHandler);
+
+
 
 // const submitReviewHandler = async (event) => {
 //     event.preventDefault();
 
 //     const city = document.querySelector('')
+// }
+
+
+// document.getElementsByClassName('.login-btn');
+// document.addEventListener('submit', loginPopupHandler);
+
+// const loginPopupHandler = (e) => {
+//     e.preventDefault
+//     if (logged_in) {
+//         setTimeout(function () { alert('Logged in successfully!'); }, 3000)
+//     } else {
+//         setTimeout(function () { alert('Invalid email or password.'); }, 3000)
+//     }
 // }
