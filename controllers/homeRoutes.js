@@ -42,7 +42,6 @@ router.get('/myaccount', withAuth, async (req, res) => {
     }
 })
 
-// Wildcard route to direct users to a 404 page
 router.get('*', (req, res) =>
     res.render('pages/404.handlebars')
 );
