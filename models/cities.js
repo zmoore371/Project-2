@@ -5,18 +5,17 @@ class City extends Model { }
 
 City.init(
     {
-        //properties/fields defining the class - table schema
         id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
-        city_name: {
+        city: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        state_id: {
+        state: {
             type: DataTypes.STRING,
             allowNull: false,
         },

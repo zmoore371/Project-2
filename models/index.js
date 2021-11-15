@@ -11,14 +11,12 @@ Review.belongsTo(City, {
 });
 
 User.hasMany(Review, {
-    foreignKey: "user_id"
+    foreignKey: 'user_id'
 });
 
 Review.belongsTo(User, {
     foreignKey: 'user_id'
 });
-
-
 
 
 module.exports = { User, City, Review };

@@ -1,5 +1,3 @@
-
-
 <head>
   <meta charset="UTF-8">
   <title>🎒 Wanderlust Reviews</title>
@@ -8,14 +6,10 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
 
-  <link rel="stylesheet" href="/css/font-awesome.min.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
 </head>
-
-
 
 <body>
   <div>
@@ -29,10 +23,18 @@
       <nav class="flex flex-column justify-content-center align-items-center">
         <div>
           <ul>
-            <li><a class="nav-btn" href="/">Home</a></li>
+            <li><a class="nav-btn" href="homepage">Home</a></li>
             <li><a class="nav-btn" href="feed">Feed</a></li>
-            <li><a class="nav-btn" href="myaccount">Account</a></li>
+            {{#if logged_in}}
+
+            {{else}}
             <li><a class="nav-btn" href="register">Become a Wanderluster</a></li>
+            {{/if}}
+            {{#if logged_in}}
+            <li><a class="nav-btn" href="myaccount">Account</a></li>
+            {{else}}
+
+            {{/if}}
             {{#if logged_in}}
             <li><a class="logout-btn nav-btn">Logout</a></li>
             {{else}}
@@ -45,20 +47,19 @@
           <label id="drop-label" class="flex align-center" for="question">Where are we going?</label>
           <select name="city" id="dropdown">
             <option value="select">Select a City</option>
-            <option value="San Francisco">San Francisco, CA</option>
-            <option value="Denver">Denver, CO</option>
-            <option value="New York">New York, NY</option>
-            <option value="Seattle">Seattle, WA</option>
-            <option value="Portland">Portland, OR</option>
-            <option value="Tokyo">Tokyo, Japan</option>
-            <option value="Banff">Banff, Alberta, Canada</option>
-            <option value="Paris">Paris, France</option>
-            <option value="South Island">South Island, New Zealand</option>
+            <option value="california">San Francisco, CA</option>
+            <option value="colorado">Denver, CO</option>
+            <option value="newyork">New York, NY</option>
+            <option value="washington">Seattle, WA</option>
+            <option value="oregon">Portland, OR</option>
+            <option value="japan">Tokyo, Japan</option>
+            <option value="canada">Banff, Alberta, Canada</option>
+            <option value="france">Paris, France</option>
+            <option value="newzealand">South Island, New Zealand</option>
           </select>
           <input id="submit-btn" type="submit" value="Submit" />
         </form>
   </div>
-
 
   </nav>
 
@@ -78,7 +79,7 @@
   </footer>
 
   <script src="js/logout.js"></script>
-  <script src="js/homepage.js"></script>
+
 </body>
 
 </html>

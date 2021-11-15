@@ -5,7 +5,78 @@
     "location": "Los Angeles, CA",
     "username": "kkw",
     "email": "kim@kkwbeauty.com",
-    "password": "password"
+    "password": "pppppppp"
+  },
+  {
+    "firstName": "Travis",
+    "lastName": "Barker",
+    "location": "Seattle, WA",
+    "username": "XdrummerboyX",
+    "email": "tbarker@blink.com",
+    "password": "pppppppp"
+  },
+  {
+    "firstName": "Taylor",
+    "lastName": "Swift",
+    "location": "Nashville, TN",
+    "username": "bad_blood",
+    "email": "tswift@gmail.com",
+    "password": "pppppppp"
+  },
+  {
+    "firstName": "Beyonce",
+    "lastName": "Knowles",
+    "location": "Houston, TX",
+    "username": "queenbey",
+    "email": "jordan99@msn.com",
+    "password": "pppppppp"
+  },
+  {
+    "firstName": "Onika",
+    "lastName": "Maraj",
+    "location": "Port of Spain, Trinidad",
+    "username": "barbie",
+    "email": "nickim@yahoo.com",
+    "password": "pppppppp"
+  },
+  {
+    "firstName": "Dermot",
+    "lastName": "Kennedy",
+    "location": "Dublin, Ireland",
+    "username": "dermotkennedy",
+    "email": "dkennedy@gmail.com",
+    "password": "pppppppp"
+  },
+  {
+    "firstName": "Kylie",
+    "lastName": "Jenner",
+    "location": "Brooklyn, New York",
+    "username": "kyliejenner",
+    "email": "kyliejenner@gmail.com",
+    "password": "pppppppp"
+  },
+  {
+    "firstName": "Kanye",
+    "lastName": "West",
+    "location": "Atlanta, GA",
+    "username": "ye",
+    "email": "yeezus@gmail.com",
+    "password": "pppppppp"
+  },
+  {
+    "firstName": "Stefani",
+    "lastName": "Germanotta",
+    "location": "Pittsburgh, PA",
+    "username": "ladygaga",
+    "email": "stefani@gmail.com",
+    "password": "pppppppp"
+  },
+  {
+    "firstName": "Britney",
+    "lastName": "Spears",
+    "location": "McComb, MS",
+    "username": "itsbritneyb!tch",
+    "email": "britney@oops.com",
+    "password": "pppppppp"
   }
- 
 ]
