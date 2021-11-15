@@ -80,6 +80,13 @@ router.post('/logout', (req, res) => {
     }
 });
 
-
+router.get('/info', async (req, res) => {
+    const userData = await User.findAll({
+        where: user_id = req.session.user_id
+    }).catch((err) => {
+        res.json(err)
+    })
+    res.json(userData)
+})
 
 module.exports = router;
