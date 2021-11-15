@@ -10,9 +10,8 @@ if (document.querySelector('.logout-btn')) {
         if (response.ok) {
             alert('Logged out successfully!');
             document.location.replace('/homepage');
-            // setTimeout(function () { ) }, 3000)
         } else {
-            alert("error")
+            alert("There was an error logging out. Please try again.")
         }
     })
 }
