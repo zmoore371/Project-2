@@ -1,32 +1,27 @@
 const sequelize = require('../config/connection');
 const { User } = require('../models');
-const { City }  = require('../models');
-const { Review }  = require('../models');
+const { City } = require('../models');
+const { Review } = require('../models');
 
 const userData = require('./userData.json');
 const cityData = require('./cityData.json');
 const reviewData = require('./reviewData.json');
 
 const seedDatabase = async () => {
-    await sequelize.sync({ force: true });
-  
-    await User.bulkCreate(userData, {
-      individualHooks: true,
-      returning: true,
-    });
+  console.log('seedingBegins---------------------')
+  await sequelize.sync({ force: true });
 
-    await City.bulkCreate(cityData, {
-      individualHooks: true,
-      returning: true,
-    });
+  console.log('seedingUsers---------------------')
+  await User.bulkCreate(userData);
 
-    await Review.bulkCreate(reviewData, {
-      individualHooks: true,
-      returning: true,
-    });
+  console.log('seedingCities---------------------')
+  await City.bulkCreate(cityData);
 
-    process.exit(0);
-  };
+  console.log('seedingReviews---------------------')
+  await Review.bulkCreate(reviewData);
+  console.log('seedingComplete---------------------')
+  process.exit(0);
+};
 
-  seedDatabase();//this works--It is bing used for users
+seedDatabase();//this works--It is bing used for users
   //seedCities();

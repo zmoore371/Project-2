@@ -260,6 +260,12 @@ nav li {
 .login-btn,
 .logout-btn {
   margin-right: 3rem;
+  cursor: pointer;
+}
+.login-btn:hover,
+.logout-btn:hover {
+  color: inherit;
+  cursor: pointer;
 }
 
 .city-list,
@@ -408,4 +414,17 @@ footer {
 
 .footer-subtitle {
   font-size: 1.5rem;
+}
+
+/* --------------------*/
+/* 404 page            */
+/* --------------------*/
+
+.err-image {
+  max-width: 50%;
+  margin-right: -14em;
+}
+
+.error-page {
+  margin: 2.5rem;
 }

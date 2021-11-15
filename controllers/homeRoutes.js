@@ -22,27 +22,36 @@ router.get('/register', (req, res) => {
 
 
 router.get('/homepage', async (req, res) => {
-    res.render('pages/homepage');
+    if (req.session.logged_in) {
+        res.render('pages/homepage', { logged_in: req.session.logged_in });
+
+    } else {
+        res.render('pages/homepage', { logged_in: false });
+    }
+
 });
 
 router.get('/myaccount', withAuth, async (req, res) => {
     try {
-        const userData = await User.findAll({
+        const userData = await User.findOne({
+            where: { id: req.session.user_id },
             attributes: { exclude: ['password'] },
-            order: [['username', 'ASC']],
+            order: [['username', 'ASC']]
         })
-
-        const users = userData.map((project) => project.get({ plain: true }))
+        const user = userData.get({ plain: true });
         res.render('pages/myaccount', {
-            users,
+            user,
             logged_in: req.session.logged_in,
         })
-
-        
 
     } catch (err) {
         res.status(500).json(err)
     }
 })
+
+router.get('*', (req, res) =>
+    res.render('pages/404.handlebars')
+);
+
 
 module.exports = router;
