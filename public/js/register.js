@@ -19,9 +19,10 @@ const signupHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/')
     } else {
-      alert("error")
+      alert(response.statusText)
     }
   }
+
 }
 
 document.querySelector('.reg-input-fields')

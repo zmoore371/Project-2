@@ -15,19 +15,19 @@ router.get('/', async (req, res) => {
         res.json(cityData)
 })
 //get review by state abbreviation
-router.get('/stateId/:id', async (req, res) => {
-    const data = await Review.findAll({
-        where: {state_id: req.params.id},
-        include: [
-            {
-                model: Review
-            }
-        ]
-    }).catch((err) => {
-        res.json(err)   
-    })
-    res.json(data);
-})
+// router.get('/stateId/:id', async (req, res) => {
+//     const data = await Review.findAll({
+//         where: {state_id: req.params.id},
+//         include: [
+//             {
+//                 model: Review
+//             }
+//         ]
+//     }).catch((err) => {
+//         res.json(err)   
+//     })
+//     res.json(data);
+// })
 
 // create a review
 // Need to format date but this will successfully create a review with the current user ID in use. Need to figure out a way to pass the city ID from whichever city user is reviewing
