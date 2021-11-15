@@ -1,15 +1,18 @@
-function getReviews() {
-    fetch('api/review/')
+
+getCityInfo()
+
+function getCityInfo() {
+    selectedCity = JSON.parse(localStorage.getItem("city"))
+    fetch(`api/review/cityid/${selectedCity}`)
     .then(function (response) {
         if(response.ok) {
             response.json().then(function (data) {
-                userReviews = data;
-                // console.log(userReviews)
-                for(var i = userReviews.length -1; i > 0; i--) {
+                userReviews = data[0].reviews;
+                console.log(userReviews)
+                for(var i = 0; i < userReviews.length; i++) {
                     var template = [];
                     
                     var title = userReviews[i].title;
-                    var city = `${userReviews[i].city.city_name}, ${userReviews[i].city.state_id}`;
                     var rating = userReviews[i].rating;
                     var category = userReviews[i].category;
                     var business = userReviews[i].business;
@@ -19,7 +22,6 @@ function getReviews() {
             
                     template.push(
                     `<p class="revTitle"><strong>${title}</strong></p><br>
-                    <p class="revCity"><strong>City: </strong> <span class="cityImport">${city}</span></p>
                     <p class="revRating"><strong>Rating: </strong><span class="rateImport">${rating}</span></p>
                     <p class="revCat"><strong>Categories: </strong><span class="catImport">${category}</span></p>
                     <p class="revPlace"><strong>Business Name: </strong><span class"placeImport">${business}</span></p>
@@ -33,6 +35,8 @@ function getReviews() {
                     d.innerHTML = htmlString
                     d.setAttribute('class', 'accReview full-border m-4')
                     document.getElementById('rev-body').appendChild(d)
+
+                    document.getElementById('selected-city').innerText = selectedCity
                 }
             })
         } else {
@@ -41,5 +45,3 @@ function getReviews() {
         }
     })
 }
-getReviews();
-

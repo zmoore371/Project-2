@@ -13,9 +13,6 @@ function carousel() {
     setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
-
-//For login on main page---------------------------------------------------------
-
 const loginFormHandler = async (event) => {
     event.preventDefault();
 
@@ -42,3 +39,13 @@ const loginFormHandler = async (event) => {
 document.querySelector('.login-form')
 document.addEventListener('submit', loginFormHandler);
 
+
+function setLocalStorage() {
+    // city = selectedCityfromdropdown
+
+    var city = "South Island"
+    localStorage.setItem("city", JSON.stringify(city))
+    
+}
+
+setLocalStorage();

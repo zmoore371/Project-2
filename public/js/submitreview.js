@@ -9,10 +9,9 @@ const submitReviewHandler = async (event) => {
     const businessAddress = document.querySelector('#place-address').value.trim();
     const review = document.querySelector('#review-freeform').value.trim();
     const recommend = document.querySelector('input[type=radio][name="recommend"]:checked').value
-    let city_id = 1
 
     console.log(title, city, rating, category, business, businessAddress, recommend, review)
-    data = {title, city, rating, category, business, businessAddress, recommend, review, city_id}
+    data = {title, city, rating, category, business, businessAddress, recommend, review}
     getCityId(data)
 }
 
