@@ -30,7 +30,7 @@ function renderReviews() {
         var template = [];
         
         var title = userReviews[i].title;
-        var city = `${userReviews[i].city.id}, ${userReviews[i].city.state_id}`;
+        var city = `${userReviews[i].city.city_name}, ${userReviews[i].city.state_id}`;
         var rating = userReviews[i].rating;
         var category = userReviews[i].category;
         var business = userReviews[i].business;
