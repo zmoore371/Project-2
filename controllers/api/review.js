@@ -64,7 +64,8 @@ router.get('/cityid/:city', async (req,res) => {
 router.get('/user', async (req, res) => {
     
     const userReview = await Review.findAll({
-        where: { user_id: req.session.user_id}
+        where: { user_id: req.session.user_id},
+        include: { model: City} 
     }).catch((err)=> {
         res.status(400).json(err)
     })
