@@ -1,14 +1,10 @@
-function init () {
-    getReviews();
-    getUser();
-}
 function getReviews() {
-    fetch('api/review/user')
+    fetch('api/review/')
     .then(function (response) {
         if(response.ok) {
             response.json().then(function (data) {
                 userReviews = data;
-                console.log(userReviews)
+                // console.log(userReviews)
                 for(var i = userReviews.length -1; i > 0; i--) {
                     var template = [];
                     
@@ -45,22 +41,5 @@ function getReviews() {
         }
     })
 }
+getReviews();
 
-function getUser () {
-    fetch('/api/user/info')
-    .then(function (response){ 
-        if(response.ok) {
-            response.json().then(function (data) {
-                userInfo = data[0]
-                document.getElementById('full-name').innerText = `${userInfo.firstName} ${userInfo.lastName}`
-                document.getElementById('username').innerText = `@${userInfo.username}`
-                document.getElementById('location').innerText = userInfo.location
-            })
-        } else {
-            alert(err)
-            return
-        }
-    })
-}
-
-init();
