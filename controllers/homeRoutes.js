@@ -45,4 +45,8 @@ router.get('/myaccount', withAuth, async (req, res) => {
     }
 })
 
+router.get('*', (req, res) =>
+    res.render('pages/404.handlebars')
+);
+
 module.exports = router;
