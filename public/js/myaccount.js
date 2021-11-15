@@ -9,7 +9,7 @@ function getReviews() {
             response.json().then(function (data) {
                 userReviews = data;
                 console.log(userReviews)
-                for(var i = userReviews.length -1; i > 0; i--) {
+                for(var i = 0; i < userReviews.length; i++) {
                     var template = [];
                     
                     var title = userReviews[i].title;
