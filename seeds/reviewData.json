@@ -127,190 +127,176 @@
     "business": "Portland Japanese Garden",
     "businessAddress": "611 SW Kingston Ave, Portland, OR",
     "recommend": "yes",
-<<<<<<< HEAD
     "city_id": "5"
   },
   {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "5"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
+    "title": "Ground Kontrol Classic Arcade and Bar",
+    "review": "What a wonderful place! Affordable and friendliness are plentiful at Ground Kontrol. I highly recommend this fabulous place for anyone looking for some games and beverages. I especially enjoyed the pinball selection and the very friendly staff working diligently to maintain them. I didn’t try any food but I can speak the truth by saying that this place is a MUST SEE!!!!!",
+    "rating": "5",
+    "category": "Must See",
+    "business": "Ground Kontrol Classic Arcade and Bar",
+    "businessAddress": "115 NW 5th Ave, Portland, OR",
     "recommend": "yes",
     "city_id": "5"
   },
   {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "6"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "6"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "6"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "7"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "7"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "7"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "8"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "8"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "8"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "9"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "9"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "9"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "10"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "10"
-  },
-  {
-    "title": "",
-    "review": "",
-    "rating": "",
-    "category": "",
-    "business": "",
-    "businessAddress": "",
-    "recommend": "yes",
-    "city_id": "10"
-=======
-    "city_id": "1"
-  },
-  {
-    "title": "This place is epic!",
-    "review": "cant wait to go back",
+    "title": "Oregon Jewish Museum and Center for Holocaust Education",
+    "review": "The space is small but well designed. Great cafe and bookstore. Docents are available during the day and some weekends. In association with the Holocaust memorial in Washington Park.",
     "rating": "4",
-    "category": "Fishing",
-    "business": "McApplebees",
-    "businessAddress": "1234 Maple Street",
+    "category": "Historical",
+    "business": "Oregon Jewish Museum and Center for Holocaust Education",
+    "businessAddress": "724 NW Davis St, Portland, OR",
     "recommend": "yes",
-    "city_id": "1"
->>>>>>> main
+    "city_id": "5"
+  },
+  {
+    "title": "Tokyo Skytree",
+    "review": "Beautiful observatory tower. Tickets can be purchased online but you can also purchase from an automated machine. Amazing view & a must visit observatory tower.",
+    "rating": "5",
+    "category": "Epic Views",
+    "business": "Tokyo Skytree",
+    "businessAddress": "1 Chome-1-2 Oshiage, Sumida City, Tokyo, Japan",
+    "recommend": "yes",
+    "city_id": "6"
+  },
+  {
+    "title": "teamLab Borderless",
+    "review": "Incredible experience, well worth the price. Recommend booking tickets in advance and trying to go on a weekday or morning if possible for fewer crowds. Allow at least a couple of hours and make sure to check all the curtains inside so you don’t miss anything. There are lots of fun interactive exhibits and an art area where you can design your own sea creature then see it “swimming” in a digital aquarium which is really fun. Make sure you wear comfortable clothes if you want to participate in the physical exhibits which are loads of fun.",
+    "rating": "5",
+    "category": "Explore",
+    "business": "teamLab Borderless",
+    "businessAddress": "Japan, Tokyo, Koto City, Aomi, 1 Chome−3−8",
+    "recommend": "yes",
+    "city_id": "6"
+  },
+  {
+    "title": "Soul Food House",
+    "review": "Dry and moist in the wrong places. Moist in the crust, dry in the meat. That's what to expect from the chicken and waffles. Little to no soul in this place. Except for the staff they're very nice.",
+    "rating": "2",
+    "category": "Good Eats",
+    "business": "Soul Food House",
+    "businessAddress": "Japan, 〒106-0045 Tokyo, Minato City, Azabujuban, 2 Chome−8−10 Ｐａｔｉｏ６F",
+    "recommend": "no",
+    "city_id": "6"
+  },
+  {
+    "title": "Fairmont Banff Springs",
+    "review": "Unexpectedly upgraded to Gold. The breakfast was wonderful. The room was small but enough and updated. The shower had multiple jets, such luxury. The opportunities to eat on site are ample and delicious. Schnitzel and fondue anyone? The pool is lovely indoor and out. Felt safe and sanitized. Best part was the staff, Tania and the rest of the team were such great hosts, helpful and kind. I’d give them 6 stars if I could.",
+    "rating": "5",
+    "category": "Relax",
+    "business": "Fairmont Banff Springs",
+    "businessAddress": "405 Spray Ave, Banff, AB T1L 1J4, Canada",
+    "recommend": "yes",
+    "city_id": "7"
+  },
+  {
+    "title": "Banff National Park",
+    "review": "Greatest place to visit in Canada.  Plenty of activities to do on your visit.  Blue torquoise lakes with snow capped mountain, meadow and alpine ranges. Sightseeing, biking, hiking, stroll the main street, visit the hot springs, hoodoos, take the Gondola to Sulphur Mountain, visit Bow Falls, Fenland Park, Vermillion Lake. Great food and friendly people. Views, views and did I say more amazing views.  So much activities to do there’s just not enough time. Lake Louise, Kananskis, Jasper and Canmore area are all a short drive away if you’ve got more than a weekend to spare.  Super beautiful. You’ll be amazed and will definitely return.",
+    "rating": "5",
+    "category": "Hiking",
+    "business": "Banff National Park",
+    "businessAddress": "Alberta, Canada",
+    "recommend": "yes",
+    "city_id": "7"
+  },
+  {
+    "title": "Whyte Museum of the Canadian Rockies",
+    "review": "It's a small museum, okay place. $10 entrance fees. You can skip it if not very fond of museum. If have nothing else to do, can visit it once.",
+    "rating": "3",
+    "category": "Historical",
+    "business": "Whyte Museum of the Canadian Rockies",
+    "businessAddress": "111 Bear St, Banff, AB, Canada",
+    "recommend": "yes",
+    "city_id": "7"
+  },
+  {
+    "title": "Eiffel Tower",
+    "review": "I though visiting in March or springtime would be beautiful; however, that year winter lasted a little longer than usual. There wasn't very much greenery and the vegetation was more brown and dried. There were very long lines with hours wait time. I opted to taken ground photos only as I did not want to waste valuable sightseeing time standing idly in lines. Seeing the Tower was still a once in a lifetime event. You could feel the history when gazing upon the structure.",
+    "rating": "4",
+    "category": "Epic Views",
+    "business": "Eiffel Tower",
+    "businessAddress": "Champ de Mars, 5 Av. Anatole France, Paris, France",
+    "recommend": "yes",
+    "city_id": "8"
+  },
+  {
+    "title": "Yann Couvreur Pâtisserie",
+    "review": "It is the second time visit the place. We shared 3 personal patisseries between the two of us: lemon tart, hazelnut cake and blueberries tart. All three were excellent.",
+    "rating": "5",
+    "category": "Good Eats",
+    "business": "Yann Couvreur Pâtisserie",
+    "businessAddress": "23bis Rue des Rosiers, 75004 Paris, France",
+    "recommend": "yes",
+    "city_id": "8"
+  },
+  {
+    "title": "City of Science and Industry",
+    "review": "It's a very pleasant area with hard paving, the canal and a park. The only issue is that the covered main area and route through is cobblestone with no smooth path and my baby daughter in the buggy didn't appreciate it...",
+    "rating": "4",
+    "category": "Explore",
+    "business": "City of Science and Industry",
+    "businessAddress": "30 Av. Corentin Cariou, 75019 Paris, France",
+    "recommend": "yes",
+    "city_id": "8"
+  },
+  {
+    "title": "Burj Al Arab",
+    "review": "Had dinner at the Sal restaurant at the Burj Al Arab. The service was upto the mark. The place is definitely iconic by all means. The place serves Spanish and Portuguese food. The starters were amazing but wasn't much impressed by the main course. We had the lamb chops and the sea food platter for the mains, and the prawns in tomato sauce and wild crabs in starters. The highlight was the tour of the hotel and it does have its charm.",
+    "rating": "4",
+    "category": "Relax",
+    "business": "Burj Al Arab",
+    "businessAddress": "Umm Suqeim 3",
+    "recommend": "yes",
+    "city_id": "9"
+  },
+  {
+    "title": "Museum Of Illusions, Dubai",
+    "review": "Good place to visit if you never been to similar place. Good place to take more pics if you know the best angles to click. Staffs around is very helpful in guiding. Kids had good fun.",
+    "rating": "4",
+    "category": "Explore",
+    "business": "Museum Of Illusions, Dubai",
+    "businessAddress": "Al Seef - Dubai Creek - Dubai",
+    "recommend": "yes",
+    "city_id": "9"
+  },
+  {
+    "title": "Al Montazah Parks",
+    "review": "Time well spent with kid. They dont have much of rides for adults but for kids, it is totally worth it. The place is too good. Parents can have leisure time and kids can enjoy.",
+    "rating": "5",
+    "category": "Relax",
+    "business": "Al Montazah Parks",
+    "businessAddress": "Opposite the Flag Island - Sharjah",
+    "recommend": "yes",
+    "city_id": "9"
+  },
+  {
+    "title": "Aoraki / Mount Cook",
+    "review": "So beautiful!!! Loved spending our time here with my husband for our 5th wedding anniversary.",
+    "rating": "5",
+    "category": "Epic Views",
+    "business": "Aoraki / Mount Cook",
+    "businessAddress": "Canterbury, New Zealand",
+    "recommend": "yes",
+    "city_id": "10"
+  },
+  {
+    "title": "Lake Tekapo",
+    "review": "Lake Tekapo is an attractive place with open spaces to enjoy adventure and quite time. the lake is beautiful and there are good viewing spots. Lake Tekapo has good restaurants with quality food and wine, and the township is clean and tidy. We walked to the Tekapo Springs for the Night time group swim and Astronomy event - the Stars were very bright - safe and enjoyable. We enjoyed a day out to Mount John observatory - the view are spectacular and we enjoyed a hot cuppa tea and scone from the shop there. Lake Tekapo has  an historic Church which attracts tourists we highly recommend it for a visit 10/10",
+    "rating": "5",
+    "category": "Explore",
+    "business": "Lake Tekapo",
+    "businessAddress": "Canterbury, New Zealand",
+    "recommend": "yes",
+    "city_id": "10"
+  },
+  {
+    "title": "Coronet Peak",
+    "review": "Got lucky today with a perfect blue sky and 7cm of fresh snow leading to quite the  wide-open powder slopes. Very little crowds too. The only disappointing thing though was having next to nothing in the terms of a terrain park. Only a few low rails and boxes with a magic carpet.",
+    "rating": "5",
+    "category": "Explore",
+    "business": "Coronet Peak",
+    "businessAddress": "Coronet Peak Ski Area, Queenstown, New Zealand",
+    "recommend": "yes",
+    "city_id": "10"
   }
 ]
