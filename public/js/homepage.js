@@ -43,7 +43,7 @@ document.addEventListener('submit', loginFormHandler);
 function setLocalStorage() {
     // city = selectedCityfromdropdown
 
-    var city = "South Island"
+    var city = "San Francisco"
     localStorage.setItem("city", JSON.stringify(city))
     
 }
