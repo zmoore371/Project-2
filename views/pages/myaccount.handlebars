@@ -5,7 +5,9 @@
             <p1 class="accHeader"><strong>My Reviews</strong></p1>
         </div>
         <div class="rev-body" id="rev-body">
+            {{#each reviews as |review|}}
             {{> profileReview}}
+            {{/each}}
         </div>
     </div>
 

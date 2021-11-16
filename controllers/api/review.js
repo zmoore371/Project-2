@@ -31,12 +31,13 @@ router.get('/', async (req, res) => {
 
 // create a review
 // Need to format date but this will successfully create a review with the current user ID in use. Need to figure out a way to pass the city ID from whichever city user is reviewing
-router.post('/', withAuth, async (req, res) => {
+router.post('/:id', withAuth, async (req, res) => {
     let date = new Date();
-
+    console.log(req.session)
     try {
         const newReview = await Review.create({
             ...req.body,
+            city_id: req.params.id,
             user_id: req.session.user_id,
             review_date: date
         })
