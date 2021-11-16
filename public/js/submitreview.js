@@ -23,10 +23,12 @@ const postReview = async (data) => {
         headers: { 'Content-Type': 'application/json' }
     })
     if (response.ok) {
+        alert("Review posted successfully!")
+
         document.location.reload()
     } else {
         // console.log(JSON.stringify(reviewInfo))
-        alert("Error")
+        alert("Review was not posted successfully. Please try again.")
     }
 }
 
