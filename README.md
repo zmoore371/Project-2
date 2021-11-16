@@ -6,8 +6,8 @@ Do you love travelling? Are you active on social media? If you said yes to those
 
 # Screenshot and URL's
 
-<img src="public/images/App screenshot.png" alt="website-screenshot">
-Live link via Heroku: 
+<img src="" alt="website-screenshot">
+Live link via Heroku:  http://wanderlustreviews.com
 
 
 # Table of contents  
