@@ -13,8 +13,8 @@ function carousel() {
     setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
-const loginFormHandler = async (event) => {
-    event.preventDefault();
+const loginFormHandler = async (e) => {
+    e.preventDefault();
 
     const email = document.querySelector('#username').value.trim();
     const password = document.querySelector('#password').value.trim();
@@ -45,7 +45,7 @@ function setLocalStorage() {
 
     var city = "San Francisco"
     localStorage.setItem("city", JSON.stringify(city))
-    
+
 }
 
 setLocalStorage();
