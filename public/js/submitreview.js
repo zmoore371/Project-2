@@ -11,37 +11,37 @@ const submitReviewHandler = async (event) => {
     const recommend = document.querySelector('input[type=radio][name="recommend"]:checked').value
 
     console.log(title, city, rating, category, business, businessAddress, recommend, review)
-    data = {title, city, rating, category, business, businessAddress, recommend, review}
-    getCityId(data)
+    data = { title, city, rating, category, business, businessAddress, recommend, review }
+    postReview(data)
 }
 
-const getCityId = async (reviewInfo) => {
-    
-    let requestUrl = '/api/review/cityid/' + data.city
+// const getCityId = async (reviewInfo) => {
 
-    fetch(requestUrl)
-    .then(function(response) {
-        if (response.ok) {
-            return response.json()
-        } else {
-            return Promise.reject(response)
-        }
-    })
-    .then(function (data) {
-        cityInfo = data
-        reviewInfo.city_id = cityInfo[0].id
+//     let requestUrl = '/api/review/cityid/' + data.city
 
-        postReview(reviewInfo)
-    })
-}    
+//     fetch(requestUrl)
+//     .then(function(response) {
+//         if (response.ok) {
+//             return response.json()
+//         } else {
+//             return Promise.reject(response)
+//         }
+//     })
+//     .then(function (data) {
+//         cityInfo = data
+//         reviewInfo.city_id = cityInfo[0].id
 
-const postReview = async(data) => {
-    const response = await fetch('/api/review', {
+//         postReview(reviewInfo)
+//     })
+// }    
+
+const postReview = async (data) => {
+    const response = await fetch(`/api/review/${data.city}`, {
         method: 'POST',
         body: JSON.stringify(data),
-        headers: {'Content-Type': 'application/json'}
+        headers: { 'Content-Type': 'application/json' }
     })
-    if(response.ok) {
+    if (response.ok) {
         document.location.reload()
     } else {
         console.log(JSON.stringify(reviewInfo))

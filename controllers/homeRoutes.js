@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const withAuth = require('../utils/auth')
-const { User, Review } = require('../models')
+const { User, Review, City } = require('../models')
 
 
 router.get('/', async (req, res) => {
@@ -37,10 +37,21 @@ router.get('/myaccount', withAuth, async (req, res) => {
             where: { id: req.session.user_id },
             attributes: { exclude: ['password'] },
             order: [['username', 'ASC']]
-        })
+        });
+
+
+        const reviewData = await Review.findAll({
+            where: { user_id: req.session.user_id },
+            include: [City]
+        });
+
+        const reviews = reviewData.map(review => review.get({ plain: true }));
+
         const user = userData.get({ plain: true });
+
         res.render('pages/myaccount', {
             user,
+            reviews,
             logged_in: req.session.logged_in,
         })
 
