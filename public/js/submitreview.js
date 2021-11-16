@@ -13,39 +13,22 @@ const submitReviewHandler = async (event) => {
     console.log(title, city, rating, category, business, businessAddress, recommend, review)
     data = { title, city, rating, category, business, businessAddress, recommend, review }
     postReview(data)
-}
-
-// const getCityId = async (reviewInfo) => {
-
-//     let requestUrl = '/api/review/cityid/' + data.city
-
-//     fetch(requestUrl)
-//     .then(function(response) {
-//         if (response.ok) {
-//             return response.json()
-//         } else {
-//             return Promise.reject(response)
-//         }
-//     })
-//     .then(function (data) {
-//         cityInfo = data
-//         reviewInfo.city_id = cityInfo[0].id
-
-//         postReview(reviewInfo)
-//     })
-// }    
+};
 
 const postReview = async (data) => {
+    console.log(data)
     const response = await fetch(`/api/review/${data.city}`, {
         method: 'POST',
         body: JSON.stringify(data),
         headers: { 'Content-Type': 'application/json' }
     })
     if (response.ok) {
+        alert("Review posted successfully!")
+
         document.location.reload()
     } else {
-        console.log(JSON.stringify(reviewInfo))
-        alert("Error")
+        // console.log(JSON.stringify(reviewInfo))
+        alert("Review was not posted successfully. Please try again.")
     }
 }
 

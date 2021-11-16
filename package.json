@@ -30,6 +30,7 @@
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.15",
     "prettier": "^2.4.1",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "sweetalert2": "^11.1.10"
   }
 }

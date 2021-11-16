@@ -13,7 +13,15 @@ router.get('/city', async (req, res) => {
 });
 
 router.get('/feed', async (req, res) => {
-    res.render('pages/feed');
+    const reviewData = await Review.findAll({
+        include: [City]
+    });
+
+    const reviews = reviewData.map(review => review.get({ plain: true }))
+
+    res.render('pages/feed', {
+        reviews
+    })
 });
 
 router.get('/register', (req, res) => {

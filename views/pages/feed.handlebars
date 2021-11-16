@@ -1,5 +1,7 @@
 <div class="flex flex-column feed-container shadow-lg" id="rev-body">
+    {{#each reviews as |review|}}
     {{> profileReview}}
+    {{/each}}
 </div>
 
 <script src="js/feed.js"></script>
