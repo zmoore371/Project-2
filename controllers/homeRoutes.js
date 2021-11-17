@@ -44,13 +44,15 @@ router.get('/myaccount', withAuth, async (req, res) => {
         const userData = await User.findOne({
             where: { id: req.session.user_id },
             attributes: { exclude: ['password'] },
-            order: [['username', 'ASC']]
+            order: [['username', 'ASC']],
+
         });
 
 
         const reviewData = await Review.findAll({
             where: { user_id: req.session.user_id },
-            include: [City]
+            include: [City],
+
         });
 
         const reviews = reviewData.map(review => review.get({ plain: true }));
