@@ -8,9 +8,9 @@ router.get('/', async (req, res) => {
 
 });
 
-router.get('/city', async (req, res) => {
-    res.render('pages/city');
-});
+// router.get('/city', async (req, res) => {
+//     res.render('pages/city');
+// });
 
 router.get('/feed', async (req, res) => {
     const reviewData = await Review.findAll({
@@ -20,8 +20,11 @@ router.get('/feed', async (req, res) => {
     const reviews = reviewData.map(review => review.get({ plain: true }))
 
     res.render('pages/feed', {
-        reviews
+        reviews,
+        logged_in: req.session.logged_in
     })
+
+
 });
 
 router.get('/register', (req, res) => {
@@ -44,13 +47,15 @@ router.get('/myaccount', withAuth, async (req, res) => {
         const userData = await User.findOne({
             where: { id: req.session.user_id },
             attributes: { exclude: ['password'] },
-            order: [['username', 'ASC']]
+            order: [['username', 'ASC']],
+
         });
 
 
         const reviewData = await Review.findAll({
             where: { user_id: req.session.user_id },
-            include: [City]
+            include: [City],
+
         });
 
         const reviews = reviewData.map(review => review.get({ plain: true }));
